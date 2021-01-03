@@ -1,4 +1,4 @@
-# CUTY OFFICIAL
+# YUi OFFICIAL
 
 
 Credits - [DEVLOPER](https://t.me/draj48)
