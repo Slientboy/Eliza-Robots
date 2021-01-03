@@ -26,14 +26,13 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-Hi {}, My Name is {}!
-I am an Anime themed advance group management bot with a lot of Special Features.
+Hi {}, My Name is {}
 
-Visit The PlyTon To Watch Anime In hindi [PlyTon](https://www.plyton.in)
+i am a group management bot I can help you to manage your group
 
-You can find my list of available commands with /help.
+You can find my list of available commands with /help
 
-Maintained By [DRAJ](http://t.me/draj48)
+Developer By- [ꋊꏂ꓄-ꇙꁝꏂ꒒꒒ ⚡️](https://t.me/Net_SHELL)
 
 """
 
@@ -146,16 +145,16 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😎Help🤝",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="My Creator🧑‍💻",
-                                                                       url="t.me/draj48")],
-                                                                                   [InlineKeyboardButton(text="Aaa CuTy Your Group 😉",
+                                                                                   InlineKeyboardButton(text="Support Group 💬",
+                                                                       url="t.me/Net_SHELL")],
+                                                                                   [InlineKeyboardButton(text="Add Me 🔰",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com")
+                                                                                   InlineKeyboardButton(text="improve Me 🧲",
+                                                                       url="https://github.com/hyy-iam-raj/YUi_GBot")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Yuss, I am Already ONline")
+        update.effective_message.reply_text("Say Yes i Can Help You 😊")
 
 
 def send_start(bot, update):
@@ -254,7 +253,7 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in Direct Message to get the help.",
+        update.effective_message.reply_text("Send me a direct message 😉",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="HELP",
                                                                        url="t.me/{}?start=help".format(
