@@ -44,7 +44,7 @@ def whois(bot: Bot, update: Update, args: List[str]):
         return
     
     text = (f"<b>User Information:</b>\n"
-            f"🆔: <code>{user.id}</code>\n"
+            f"<b>UiD]-</b> <code>{user.id}</code>\n"
             f"👤Name: {html.escape(user.first_name)}")
 
     if user.last_name:
