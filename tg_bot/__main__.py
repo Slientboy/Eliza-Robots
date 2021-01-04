@@ -53,7 +53,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/29384038dc6b7900c0bda.png"
+TECHNO_IMG = "https://telegra.ph/file/f73506e09900f96a9c16e.png"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -150,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    [InlineKeyboardButton(text="Add Me 🔰",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="improve Me 🧲",
-                                                                       url="https://github.com/hyy-iam-raj/YUi_GBot")
+                                                                       url="https://github.com/NetSHELL-Team/YUi_GBot.git")
                                                                                  ]]))
 
     else:
