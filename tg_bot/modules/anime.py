@@ -4,7 +4,7 @@ import jikanpy
 import datetime
 import textwrap
 import requests
-from tg_bot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from tg_bot import DEV_USERS, OWNER_ID, dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
