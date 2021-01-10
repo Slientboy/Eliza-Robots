@@ -513,7 +513,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("I am online master 🙂.")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()
