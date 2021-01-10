@@ -25,3 +25,4 @@ wikipedia
 pyowm
 tabulate
 parsel
+telethon==1.16.4
