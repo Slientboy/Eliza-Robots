@@ -32,6 +32,7 @@ if ENV:
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
+        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
     except ValueError:
