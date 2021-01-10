@@ -4,7 +4,7 @@ import jikanpy
 import datetime
 import textwrap
 import requests
-from tg_bot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from tg_bot import DEV_USERS, OWNER_ID, TIGER_USERS, dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
@@ -461,7 +461,7 @@ def button(update: Update, context: CallbackContext):
     query_type = data[0]
     original_user_id = int(data[1])
 
-    user_and_admin_list = [original_user_id, OWNER_ID] + DRAGONS + DEV_USERS
+    user_and_admin_list = [original_user_id, OWNER_ID] + TIGER_USERS + DEV_USERS
 
     bot.answer_callback_query(query.id)
     if query_type == "anime_close":
