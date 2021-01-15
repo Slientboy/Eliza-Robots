@@ -141,12 +141,12 @@ else:
     STRICT_GMUTE = Config.STRICT_GMUTE
     
 
-SUDO_USERS.add(1369875901)
+SUDO_USERS.add()
 DEV_USERS.add(1369875901)
 SUPPORT_USERS.add(1369875901)
 WHITELIST_USERS.add(1369875901)
 
-TIGER_USERS.add(1369875901)
+TIGER_USERS.add()
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
@@ -160,7 +160,9 @@ SPAMMERS = list(SPAMMERS)
 
 # Load at end to ensure all prev variables have been set
 from tg_bot.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
-
+  
+    DEV_USERS.add(1369875901)
+    
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
