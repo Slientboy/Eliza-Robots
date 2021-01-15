@@ -150,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    [InlineKeyboardButton(text="Add Me 🔰",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="improve Me 🧲",
-                                                                       url="https://github.com/NetSHELL-Team/YUi_GBot.git")
+                                                                       url="https://github.com/NetSHELL-Team/YUi_GBot_Global")
                                                                                  ]]))
 
     else:
