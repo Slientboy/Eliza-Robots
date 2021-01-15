@@ -33,11 +33,11 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "1369875901"
+         "value": "Your Telegram ID"
       },
       "OWNER_NAME": {
          "description": "Your username",
-         "value": "draj48"
+         "value": "Your Telegram username"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
@@ -46,7 +46,7 @@
       },
 "GRAND_IMG": {
          "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/c4f2ebad0d33e97404671.jpg"    
+         "value": "Plese link the img  your bot /start banner"    
       },
       "GBAN_LOGS": {
          "description": "Gban log channel, include the hyphen too: ex: -123456",
@@ -85,10 +85,10 @@
       "TIGER_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "1369875901"
+         "value": "your Telegram ID"
       },
       "TOKEN": {
-         "description": "Your bot token.",
+         "description": "Your bot token api form botfather.",
          "required": true,
          "value": ""
       },
@@ -114,7 +114,7 @@
       "manager",
       "bot"
    ],
-   "logo": "https://telegra.ph/file/c4f2ebad0d33e97404671.jpg",
-   "name": "CuTy_Bot",
-   "repository": "https://github.com/draj-48"
+   "logo": "https://telegra.ph/file/f4c940573fc28ecb9f350.png",
+   "name": "Yui_GBot",
+   "repository": "https://github.com/NetSHELL-Team/YUi_GBot_Global "
 }
