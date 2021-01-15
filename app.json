@@ -7,7 +7,7 @@
          "plan": "heroku-postgresql"
       }
    ],
-   "description": "Telegram group management bot.",
+   "description": "Telegram group management bot Yui.",
    "env": {
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /",
@@ -44,7 +44,7 @@
          "required": false,
          "value": "1369875901"
       },
-"GRAND_IMG": {
+"BOT_IMG": {
          "description": "Image shows when hit /start",
          "value": "Plese link the img  your bot /start banner"    
       },
