@@ -11,3 +11,8 @@ Credits - [DEVLOPER](https://telegram.me/Net_SHELL)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NetSHELL-Team/YUi_GBot_Global)
 
 
+A Modular Telegram Python bot running on python3 with a sqlalchemy database 
+
+Can be found on telegram as [Yui_GBot](https://t.me/Yui_GBot).
+
+The Support group can be reached out to at [Net_SHELL](https://t.me/Net_SHELL), where you can ask for help about [Yui](https://t.me/Yui_GBot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
