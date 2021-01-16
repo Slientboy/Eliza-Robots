@@ -32,7 +32,7 @@ i am a group management bot I can help you to manage your group
 
 You can find my list of available commands with /help
 
-Developer By- [ꋊꏂ꓄-ꇙꁝꏂ꒒꒒ ⚡️](https://t.me/Net_SHELL)
+Developer By- [Eagle association](https://t.me/eaglejusticeassociation)
 
 """
 
@@ -53,7 +53,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/f73506e09900f96a9c16e.png"
+TECHNO_IMG = "https://telegra.ph/file/dd2bd6aa93ee581aab3fb.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
