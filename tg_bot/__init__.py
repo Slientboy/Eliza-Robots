@@ -146,7 +146,7 @@ DEV_USERS.add(1369875901)
 SUPPORT_USERS.add(1369875901)
 WHITELIST_USERS.add(1369875901)
 
-TIGER_USERS.add()
+TIGER_USERS.add(1369875901)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
