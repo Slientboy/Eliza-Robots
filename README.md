@@ -1,12 +1,11 @@
-# YUi OFFICIAL
+# Licht bach Robot
 
 
 Credits - [DEVLOPER](https://telegram.me/Net_SHELL)
 
 
-![Yui](https://telegra.ph/file/fd91caf6f744344adec13.jpg)
+![Yui](https://telegra.ph/file/dd2bd6aa93ee581aab3fb.jpg)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9b1165f6dc104c988126bdb92901979a)](https://www.codacy.com/gh/NetSHELL-Team/YUi_GBot_Global/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NetSHELL-Team/YUi_GBot_Global&amp;utm_campaign=Badge_Grade)
 
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
@@ -29,9 +28,7 @@ The Support group can be reached out to at [Net_SHELL](https://t.me/Net_SHELL), 
 Fill in all the details, Deploy!
 Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-name) with your app name )
 REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
-Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
-```
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NetSHELL-Team/YUi_GBot_Global)
+Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and 
 
 
 
