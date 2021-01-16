@@ -12,7 +12,7 @@ Credits - [DEVLOPER](https://telegram.me/Net_SHELL)
 
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html)
 
-![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg)](https://github.com/ellerbrock/open-source-badges/)
 
 
 A Modular Telegram Python bot running on python3 with a sqlalchemy database 
