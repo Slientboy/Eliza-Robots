@@ -3,10 +3,12 @@
 
 Credits - [DEVLOPER](https://telegram.me/Net_SHELL)
 
-[![lok](https://www.herokucdn.com/deploy/button.svg)
 
+![Yui](https://telegra.ph/file/fd91caf6f744344adec13.jpg)
+
+#YUI CODE C
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9b1165f6dc104c988126bdb92901979a)](https://www.codacy.com/gh/NetSHELL-Team/YUi_GBot_Global/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NetSHELL-Team/YUi_GBot_Global&amp;utm_campaign=Badge_Grade)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NetSHELL-Team/YUi_GBot_Global)
 
 
-https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FNetSHELL-Team%2FYUi_GBot_Global%2Fblob%2Fmain%2FREADME.md&template=https%3A%2F%2Fgithub.com%2FNetSHELL-Team%2FYUi_GBot_Global
