@@ -35,7 +35,4 @@ Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.co
 
 
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=NetSHELL-Team=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
-
-
 
