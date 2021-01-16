@@ -26,15 +26,19 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-Hi {}, My Name is {}
+
+Hi {}, My name is {} !
 
 i am a group management bot I can help you to manage your group
 
 You can find my list of available commands with /help
 
-Developer By- [Eagle association](https://t.me/eaglejusticeassociation)
+Developer By-[Licht bach](https:/t.me/lichtbotsupportgroup)
 
 """
+
+BOT_IMG = "https://telegra.ph/file/dd2bd6aa93ee581aab3fb.jpg"
+
 
 HELP_STRINGS = """
 
@@ -53,7 +57,8 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/dd2bd6aa93ee581aab3fb.jpg"
+
+
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -141,20 +146,14 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                TECHNO_IMG,
+                BOT_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😎Help🤝",
-                                                                       callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Support Group 💬",
-                                                                       url="t.me/Net_SHELL")],
-                                                                                   [InlineKeyboardButton(text="Add Me 🔰",
-                                                                       url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="improve Me 🧲",
-                                                                       url="https://github.com/NetSHELL-Team/YUi_GBot_Global")
-                                                                                 ]]))
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text=" add Jassica to your group ",
+                                                                       url="t.me/{}?startgroup=true".format(bot.username))]]))
+
 
     else:
-        update.effective_message.reply_text("Say Yes i Can Help You 😊")
+        update.effective_message.reply_text("HI, Why u summoned me")
 
 
 def send_start(bot, update):
@@ -253,9 +252,9 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Send me a direct message 😉",
+        update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="HELP",
+                                                [[InlineKeyboardButton(text="Help",
                                                                        url="t.me/{}?start=help".format(
                                                                            bot.username))]]))
         return
@@ -264,7 +263,7 @@ def get_help(bot: Bot, update: Update):
         module = args[1].lower()
         text = "Here is the available help for the *{}* module:\n".format(HELPABLE[module].__mod_name__) \
                + HELPABLE[module].__help__
-        send_help(chat.id, text, InlineKeyboardMarkup([[InlineKeyboardButton(text="BACK", callback_data="help_back")]]))
+        send_help(chat.id, text, InlineKeyboardMarkup([[InlineKeyboardButton(text="Back", callback_data="help_back")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -513,7 +512,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("I am online master 🙂.")
+        LOGGER.info("Using long polling.")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()
