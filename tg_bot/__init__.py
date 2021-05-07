@@ -40,7 +40,7 @@ if ENV:
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
-        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
+        SODU_USERS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
     except ValueError:
         raise Exception(
@@ -65,7 +65,7 @@ if ENV:
             "Your tiger users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get('INFOPIC', False))
-    EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
+    GBAN_LOGS = os.environ.get('EVENT_LOGS', None)
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
     URL = os.environ.get('URL', "")  # Does not contain token
     PORT = int(os.environ.get('PORT', 5000))
@@ -137,7 +137,7 @@ else:
         raise Exception(
             "Your tiger users list does not contain valid integers.")
 
-    EVENT_LOGS = Config.EVENT_LOGS
+    GBAN_LOGS = Config.EVENT_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
