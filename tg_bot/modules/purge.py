@@ -1,5 +1,5 @@
 import time
-from telethon import events
+from tg_bot import events
 
 from tg_bot import telethn
 from tg_bot.modules.helper_funcs.telethn.chatstatus import (
