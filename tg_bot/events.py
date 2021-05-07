@@ -1,5 +1,5 @@
 from tg_bot import events
-from tg_bot import telethn
+from tg_bot import events
 
 
 def register(**args):
