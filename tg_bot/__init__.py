@@ -171,7 +171,7 @@ else:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
 
-DRAGONS.add(OWNER_ID)
+SUDO_USERS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(1200780834)
 DEV_USERS.add(797768146) 
@@ -189,10 +189,10 @@ pbot = Client("saberPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 
-DRAGONS = list(DRAGONS) + list(DEV_USERS)
+SUDO_USERS = list(SUDO_USERS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
-WOLVES = list(WOLVES)
-DEMONS = list(DEMONS)
+SUPPORT_USERS = list(SUPPORT_USERS)
+WHITELIST_USERS = list(WHITELIST_USERS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
