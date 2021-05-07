@@ -171,13 +171,6 @@ else:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
 
-SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(712008424)
-
-
-DEV_USERS.add(OWNER_ID)
-
-
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("SpamWatch API key missing! recheck your config.")
