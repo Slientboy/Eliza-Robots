@@ -101,7 +101,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from LaylaRobot.config import Development as Config
+    from tg_bot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -183,8 +183,8 @@ else:
     sw = spamwatch.Client(SPAMWATCH_API)
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("layla", API_ID, API_HASH)
-pbot = Client("laylapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("tg", API_ID, API_HASH)
+pbot = Client("tg_pbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
