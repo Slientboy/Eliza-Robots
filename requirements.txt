@@ -27,3 +27,4 @@ tabulate
 parsel
 spamwatch
 telethon
+pyrogram>=1.0.7
