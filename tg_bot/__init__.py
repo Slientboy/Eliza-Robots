@@ -40,7 +40,7 @@ if ENV:
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
-        SODU_USERS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
+        SUDO_USERS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
     except ValueError:
         raise Exception(
@@ -113,7 +113,7 @@ else:
     OWNER_USERNAME = Config.OWNER_USERNAME
 
     try:
-        SODU_USERS = set(int(x) for x in Config.DRAGONS or [])
+        SUDO_USERS = set(int(x) for x in Config.DRAGONS or [])
         DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
     except ValueError:
         raise Exception(
