@@ -184,12 +184,6 @@ pbot = Client("saberPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 
-SUDO_USERS = list(SUDO_USERS) + list(DEV_USERS)
-DEV_USERS = list(DEV_USERS)
-SUPPORT_USERS = list(SUPPORT_USERS)
-WHITELIST_USERS = list(WHITELIST_USERS)
-TIGERS = list(TIGERS)
-
 # Load at end to ensure all prev variables have been set
 from tg_bot.modules.helper_funcs.handlers import (CustomCommandHandler,
                                                         CustomMessageHandler,
