@@ -12,7 +12,6 @@ from tg_bot.modules.log_channel import loggable
 from tg_bot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
-REPORT_IMMUNE_USERS = SUDO_USERS + TIGER_USERS
 
 
 @run_async
