@@ -1,18 +1,18 @@
-import time
-from tg_bot import events
-
-from tg_bot import telethon
-from tg_bot.modules.helper_funcs.telethn.chatstatus import (
+from tg_bot.modules.helper_funcs.telethon.chat_status import (
     can_delete_messages, user_is_admin)
+from tg_bot import oko
+import time
+from telethon import events
 
 
+@oko.on(events.NewMessage(pattern="^[!/]purge$"))
 async def purge_messages(event):
     start = time.perf_counter()
     if event.from_id is None:
         return
 
     if not await user_is_admin(
-            user_id=event.sender_id, message=event) and event.from_id not in [
+            user_id=event.from_id, message=event) and event.from_id not in [
                 1087968824
             ]:
         await event.reply("Only Admins are allowed to use this command")
@@ -38,21 +38,19 @@ async def purge_messages(event):
             await event.client.delete_messages(event.chat_id, messages)
             messages = []
 
-    try:
-        await event.client.delete_messages(event.chat_id, messages)
-    except:
-        pass
+    await event.client.delete_messages(event.chat_id, messages)
     time_ = time.perf_counter() - start
     text = f"Purged Successfully in {time_:0.2f} Second(s)"
     await event.respond(text, parse_mode='markdown')
 
 
+@oko.on(events.NewMessage(pattern="^[!/]del$"))
 async def delete_messages(event):
     if event.from_id is None:
         return
 
     if not await user_is_admin(
-            user_id=event.sender_id, message=event) and event.from_id not in [
+            user_id=event.from_id, message=event) and event.from_id not in [
                 1087968824
             ]:
         await event.reply("Only Admins are allowed to use this command")
@@ -78,12 +76,4 @@ __help__ = """
  - /purge <integer X>: deletes the replied message, and X messages following it if replied to a message.
 """
 
-PURGE_HANDLER = purge_messages, events.NewMessage(pattern="^[!/]purge$")
-DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
-
-telethn.add_event_handler(*PURGE_HANDLER)
-telethn.add_event_handler(*DEL_HANDLER)
-
 __mod_name__ = "Purges"
-__command_list__ = ["del", "purge"]
-__handlers__ = [PURGE_HANDLER, DEL_HANDLER]
