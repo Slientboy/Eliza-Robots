@@ -11,7 +11,6 @@ from tg_bot import dispatcher, OWNER_ID, LOGGER, DEV_USERS
 from tg_bot.modules.helper_funcs.chat_status import sudo_plus, dev_plus
 
 USERS_GROUP = 4
-DEV_AND_MORE = DEV_USERS.append(int(OWNER_ID))
 
 
 def get_user_id(username):
