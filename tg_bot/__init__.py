@@ -36,7 +36,7 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    JOIN_LOGGER = os.environ.get('JOIN_LOGGER', None)
+     MESSAGE_DUMP = os.environ.get('JOIN_LOGGER', None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
@@ -110,7 +110,7 @@ else:
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
-    JOIN_LOGGER = Config.JOIN_LOGGER
+    MESSAGE_DUMP = Config.JOIN_LOGGER
     OWNER_USERNAME = Config.OWNER_USERNAME
 
     try:
@@ -138,7 +138,7 @@ else:
         raise Exception(
             "Your tiger users list does not contain valid integers.")
 
-    GBAN_LOGS = Config.EVENT_LOGS
+    GBAN_LOGS = Config.GBAN_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
