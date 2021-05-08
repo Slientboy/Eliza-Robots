@@ -36,7 +36,7 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-     MESSAGE_DUMP = os.environ.get('JOIN_LOGGER', None)
+     MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
@@ -110,7 +110,7 @@ else:
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
-    MESSAGE_DUMP = Config.JOIN_LOGGER
+    MESSAGE_DUMP = Config.MESSAGE_DUMP
     OWNER_USERNAME = Config.OWNER_USERNAME
 
     try:
