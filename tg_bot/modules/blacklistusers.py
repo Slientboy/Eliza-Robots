@@ -12,8 +12,6 @@ from tg_bot.modules.helper_funcs.chat_status import dev_plus
 from tg_bot.modules.helper_funcs.extraction import extract_user_and_text, extract_user
 from tg_bot.modules.log_channel import gloggable
 
-BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + SUDO_USERS + WHITELIST_USERS + SUPPORT_USERS
-BLABLEUSERS = [OWNER_ID] + DEV_USERS
 
 
 @run_async
