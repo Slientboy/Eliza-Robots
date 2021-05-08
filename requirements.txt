@@ -26,5 +26,5 @@ pyowm
 tabulate
 parsel
 spamwatch
-telethon
+Telethon==1.16.4
 pyrogram>=1.0.7
